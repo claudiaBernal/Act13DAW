@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+h2{
+            margin-top: 25px;
+        }
+        div {
+            border: 1px solid black;
+            padding: 25px 50px 75px;
+            background-color: white;
+            border-radius: 12px;
+            background-color: #F6A48E;
+        }
+        body {
+            background-color: #A20000;
+        }
+</style>
+</head>
+<body>
+    <script src="demo_BOM.js"></script>
+<h2><center>Claudia Bernal Otero</center></h2>
+<div>
+    <h2><center> Window</center></h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Método/Atributo</th>
+    <th>Descripción</th> 
+    <th>Ejemplo</th>
+  </tr>
+  <tr>
+    <td>window.innerHeight</td>
+    <td>Obtiene la altura de la ventana</td>
+    <td>
+        <button onclick="myFunction1()">ver</button>
+        <p id="hei"></p>
+
+    </td>
+  </tr>
+  <tr>
+    <td>window.innerWidth</td>
+    <td>Obtiene la anchura de la ventana</td>
+    <td>
+        <button onclick="myFunction2()">ver</button>
+        <p id="wid"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>window.open()</td>
+    <td>Abre una nueva ventana con atributos proporcionados (URL, nombre, tamaño)</td>
+    <td>
+        <button onclick="myFunction3()">ver</button>
+    </td>
+  </tr>
+  <tr>
+    <td>window.close()</td>
+    <td>Cierra la ventana</td>
+    <td>
+        <button onclick="openWin()">Abrir</button>
+        <button onclick="closeWin()">Cerrar</button>
+    </td>
+  </tr>
+  <tr>
+    <td>window.moveTo()</td>
+    <td>Mueve la ventana a dos coordenadas proporcionadas</td>
+    <td>
+        <button onclick="openWin()">Abrir</button>
+        <button onclick="moveWin()">Mover</button>
+    </td>
+  </tr>
+  <tr>
+    <td>window.resizeTo()</td>
+    <td>Redimensiona la ventana a un tamaño especificado en dos atributos</td>
+    <td>
+        <button onclick="openWin()">Crear</button>
+        <button onclick="resizeWin()">Redimensión</button>
+    </td>
+  </tr>
+  <tr>
+    <td>window.alert()</td>
+    <td>Despliega una ventana emergente con un solo botón de aceptar</td>
+    <td>
+        <button onclick="myFunction4()">alerta!</button>
+    </td>
+  </tr>
+  <tr>
+    <td>window.prompt()</td>
+    <td>Despliega una ventana emergente para la captura de un valor</td>
+    <td>
+        <button onclick="myFunction5()">ver</button>
+        <p id="prom"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>window.confirm()</td>
+    <td>Despliega una ventana de confirmación con el botón de aceptar y cancelar</td>
+    <td>
+        <button onclick="myFunction6()">ver</button>
+    </td>
+  </tr>
+</table>
+</div>
+
+
+<div>
+    <h2><center> Screen</center></h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Método/Atributo</th>
+    <th>Descripción</th> 
+    <th>Ejemplo</th>
+  </tr>
+  <tr>
+    <td>screen.heigth</td>
+    <td>Obtiene la altura total de la ventana</td>
+    <td>
+        <button onclick="myFunction7()">ver</button>
+        <p id="sh"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>screen.width</td>
+    <td>Obtiene la anchura total de la ventana</td>
+    <td>
+        <button onclick="myFunction8()">ver</button>
+        <p id="sw"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>screen.availWidth</td>
+    <td>Obtiene la anchura de la ventana disponible</td>
+    <td>
+        <button onclick="myFunction9()">ver</button>
+        <p id="saw"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>screen.avalHeigth</td>
+    <td>Obtiene la altura de la ventana disponible (sin la barra de windows, por ejemplo)</td>
+    <td>
+        <button onclick="myFunction10()">ver</button>
+        <p id="sah"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>screen.colorDepth</td>
+    <td>Regresa la profundidad de color de la pantalla en la cantidad de bits usados para cada color</td>
+    <td>
+        <button onclick="myFunction11()">ver</button>
+        <p id="Cd"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>screen.pixelDepth</td>
+    <td>Regresa la profundidad de pixeles de la pantalla</td>
+    <td>
+        <button onclick="myFunction12()">ver</button>
+        <p id="pd"></p>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div>
+    <h2><center>Location</center></h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Método/Atributo</th>
+    <th>Descripción</th> 
+    <th>Ejemplo</th>
+  </tr>
+  <tr>
+    <td>location.href</td>
+    <td>Se obitnene la URL de la página actual</td>
+    <td>
+        <button onclick="myFunction13()">ver</button>
+        <p id="lh"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>location.hostname</td>
+    <td>Se obtiene el nombre del host o el nombre del dominio del sitio</td>
+    <td>
+        <p id="lho"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>location.protocol</td>
+    <td>Regresa el protocolo con el que se cargó el sitio (HTTP o HTTPS)</td>
+    <td>
+        <button onclick="myFunction14()">ver</button>
+        <p id="lp"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>location.assign()</td>
+    <td>Carga un nuevo documento asignandole una dirección URL</td>
+    <td>
+        <button onclick="myFunction15()">nuevo doc</button>
+    </td>
+  </tr>
+  <tr>
+    <td>location.reload()</td>
+    <td>Recarga el sitio actual</td>
+    <td>
+        <button onclick="reload">reload</button>
+
+    </td>
+  </tr>
+  <tr>
+    <td>location.replace()</td>
+    <td>Remplaza el documento actual con uno nuevo (parecido a assign())</td>
+    <td>
+        <button onclick="myFunction16()">Remplaza</button>
+    </td>
+  </tr>
+</table>
+</div>
+
+
+<div>
+    <h2><center>History</center></h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Método/Atributo</th>
+    <th>Descripción</th> 
+    <th>Ejemplo</th>
+  </tr>
+  <tr>
+    <td>history.length</td>
+    <td>Obtiene el número de elementos en la lista del historial</td>
+    <td>
+        <p id="hle"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>history.back()</td>
+    <td>Carga la URL previa del historial</td>
+    <td>
+        <button onclick="goBack()">atrás</button>
+    </td>
+  </tr>
+  <tr>
+    <td>history.forward()</td>
+    <td>Carga la siguiente URL en la lista del historial</td>
+    <td>
+        <button onclick="goForward()">Siguiente</button>
+    </td>
+  </tr>
+  <tr>
+    <td>history.go()</td>
+    <td>Carga una página específica del historial (recibe un indice para cargar o una cantidad de saltos)</td>
+    <td>
+        <button onclick="goBack1()">ver</button>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div>
+    <h2><center>Navigator</center></h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Método/Atributo</th>
+    <th>Descripción</th> 
+    <th>Ejemplo</th>
+  </tr>
+  <tr>
+    <td>navigator.appCodeName</td>
+    <td>Obtiene el nombre clave del navegador, por lo general su respuesta es "Mozilla"</td>
+    <td>
+        <button onclick="myFunction17()">ver</button>
+        <p id="acn"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>navigator.appName</td>
+    <td>Obtiene el nombre del navegador, por lo general su respuesta es "Netscape"</td>
+    <td>
+        <button onclick="myFunction18()">ver</button>
+        <p id="an"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>navigator.appVersion</td>
+    <td>Regresa la información de la versión del navegador</td>
+    <td>
+        <button onclick="myFunction19()">ver</button>
+        <p id="ave"></p>
+
+  </tr>
+  <tr>
+    <td>navigator.userAgent</td>
+    <td>Regresa la propiedad del encabezado del "user-agent" enviada al servidor</td>
+    <td>
+        <button onclick="myFunction20()">ver</button>
+        <p id="uag"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>navigator.language</td>
+    <td>Regresa el lenguaje (idioma) del navegador</td>
+    <td>
+        <button onclick="myFunction21()">ver</button>
+        <p id="la"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>navigator.platform</td>
+    <td>Obtiene el Sistema Operativo del navegador, no puede reportar nuevos sistemas operativos lanzados después del navegador</td>
+    <td>
+        <button onclick="myFunction22()">ver</button>
+        <p id="plat"></p>
+    </td>
+  </tr>
+  <tr>
+      <td>navigator.onLine()</td>
+      <td>Es un booleano que regresará positivo en caso de que se encuentre en linea el navegador</td>
+      <td>
+        <button onclick="myFunction23()">ver</button>
+        <p id="onl"></p>
+    </td>
+  </tr>
+</table>
+</div>
+
+
+</body>
+</html>
